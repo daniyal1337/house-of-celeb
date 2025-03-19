@@ -378,7 +378,7 @@ ul {
   animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  background-image: url(../images/loader.png);
+  background-image: url(../images/logo.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 60px auto;
@@ -2577,10 +2577,7 @@ ul {
   animation: textRotate 05s linear 0s forwards infinite alternate;
 }
 
-.sliding-text__list li .sliding-text__title:hover {
-  color: transparent;
-  -webkit-text-stroke: 1px transparent;
-}
+ 
 
 .sliding-text__title:before {
   overflow: hidden;
@@ -3793,7 +3790,7 @@ ul {
 .site-footer {
   position: relative;
   display: block;
-  padding: 98px 0px 0px;
+  padding: 0px 0px 0px;
   z-index: 1;
 }
 
@@ -10287,43 +10284,56 @@ ul {
 
 
 
-.booking-input-box {
-  position: relative;
+
+
+
+
+
+.ticker {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  margin-bottom: 15px;
+  background: #690B99;
+  color: white;
+  padding: 6px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 9999;
 }
 
-.booking-date-input {
-  width: 100%;
-  padding: 12px 15px;
-  font-size: 16px;
-  border: 1px solid   #333;
-  border-radius: 30px;
-  background:#0E0A17;
-  color: #ddd;
-  transition: all 0.3s ease;
+.ticker-wrapper {
+  display: flex;
+  width: max-content;
+  animation: ticker-animation 25s linear infinite;
 }
 
-.booking-date-input:focus {
-  border-color: #ff6b6b;
-  box-shadow: 0 0 8px rgba(255, 107, 107, 0.5);
-  outline: none;
+@keyframes ticker-animation {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-50%);
+  }
 }
 
-.booking-date-input::-webkit-calendar-picker-indicator {
-  filter: invert(0.5);
-  cursor: pointer;
+.jo-blog-comment-form button i {
+  font-size: 22px;
+  padding-top: 3px;
 }
 
-
-
-
-
-
-
-
-
-
+.ticker-item {
+  color: var(--ttRed);
+  height: clamp(45px, 2.94vw, 56px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 clamp(18px, 1.26vw, 24px);
+  border-radius: 6px;
+  gap: 8px;
+  color: var(--white);
+  margin-top: clamp(15px, 1.58vw, 30px);
+}
 
 
 
@@ -10359,3 +10369,41 @@ ul {
       transform: translateX(-100%);
   }
 }
+
+
+
+
+
+
+.booking-input-box {
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.booking-date-input {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid   #333;
+  border-radius: 30px;
+  background:#0E0A17;
+  color: #ddd;
+  transition: all 0.3s ease;
+}
+
+.booking-date-input:focus {
+  border-color: #ff6b6b;
+  box-shadow: 0 0 8px rgba(255, 107, 107, 0.5);
+  outline: none;
+}
+
+.booking-date-input::-webkit-calendar-picker-indicator {
+  filter: invert(0.5);
+  cursor: pointer;
+}
+
+
+
+
+
