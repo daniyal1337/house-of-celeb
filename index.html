@@ -73,7 +73,7 @@
 
 
     <!-- Start sidebar widget content -->
-    <div class="xs-sidebar-group info-group info-sidebar">
+    <!-- <div class="xs-sidebar-group info-group info-sidebar">
         <div class="xs-overlay xs-bg-black"></div>
         <div class="xs-sidebar-widget">
             <div class="sidebar-widget-container">
@@ -115,7 +115,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- End sidebar widget content -->
 
 
@@ -137,6 +137,14 @@
                                 <li>
                                     <a href="index.html">Home </a>
                                     
+                                </li>
+                                <li class="dropdown">
+                                    <a href="contact.html">Location</a>
+                                    <ul>
+                                        <li><a href="event-details.html">Paschim Enclave</a></li>
+                                        <li><a href="event-details-2.html">Naraina vihar</a></li>
+                                        </ul>
+                                     
                                 </li>
                                 <li>
                                     <a href="faq.html">Privacy and Policy</a>
@@ -164,10 +172,7 @@
                                         <li><a href="dream-event-planners.html">Dream Event Planners</a></li>
                                     </ul> -->
                                 </li>
-                                <li>
-                                    <a href="contact.html">Location</a>
-                                     
-                                </li>
+                                 
                                 <li>
                                     <a href="gallery.html">Gallery</a>
                                     
@@ -719,74 +724,71 @@
                 <div class="contact-one__inner">
                     <h3 class="contact-one__title">Book Your Private Theater Experience 🎬✨ </h3>
                     <p class="contact-one__text">Make your celebrations unforgettable! Fill out the form below, and our team will get in touch with you. </p>
-                    <form class="contact-form-validated contact-one__form" action="https://api.web3forms.com/submit"
-                        method="post"  >
+
+
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form-validated contact-one__form">
                         <input type="hidden" name="access_key" value="4034e059-3778-427d-9d02-ad51fc32862b">
+                    
                         <div class="row">
                             <div class="col-xl-6 col-lg-6">
                                 <div class="contact-one__input-box">
-                                    <input type="text" name="name" placeholder="Your Name" required="">
+                                    <input type="text" name="name" placeholder="Your Name" required>
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-6">
                                 <div class="contact-one__input-box">
-                                    <input type="email" name="email" placeholder="Your Email" required="">
+                                    <input type="email" name="email" placeholder="Your Email" required>
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-6">
                                 <div class="contact-one__input-box">
-                                    <input type="text" name="Phone" placeholder="Phone Number" required="">
+                                    <input type="text" name="phone" placeholder="Phone Number" required>
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-6">
                                 <div class="contact-one__input-box">
-                                    <div class="select-box">
-                                        <select class="selectmenu wide">
-                                            <option selected="selected">Event Type</option>
-                                         
-                                            <option>Birthday</option>
-                                            <option>  Anniversary</option>
-                                            <option>Proposal</option>
-                                            <option>Movie Night</option>
-                                            <option>Others</option>
-                                        </select>
-                                    </div>
+                                    <select name="event_type" class="selectmenu wide" required>
+                                        <option value="" selected disabled>Event Type</option>
+                                        <option value="Birthday">Birthday</option>
+                                        <option value="Anniversary">Anniversary</option>
+                                        <option value="Proposal">Proposal</option>
+                                        <option value="Movie Night">Movie Night</option>
+                                        <option value="Others">Others</option>
+                                    </select>
                                 </div>
                             </div>
-
+                    
                             <div class="col-md-6">
                                 <div class="booking-input-box">
-                                    <input type="date" name="date" class="booking-date-input" placeholder="Select Booking Date" required>
+                                    <input type="date" name="date" class="booking-date-input" required>
                                 </div>
                             </div>
-                            
+                    
                             <div class="col-xl-6 col-lg-6">
                                 <div class="contact-one__input-box">
-                                    <div class="select-box">
-                                        <select class="selectmenu wide">
-                                            <option selected="selected">No. Of People</option>
-                                         
-                                            <option>1</option>
-                                            <option> 2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                            <option>6+</option>
-                                        </select>
-                                    </div>
+                                    <select name="no_of_people" class="selectmenu wide" required>
+                                        <option value="" selected disabled>No. Of People</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6+">6+</option>
+                                    </select>
                                 </div>
                             </div>
+                    
                             <div class="col-xl-12">
                                 <div class="contact-one__input-box text-message-box">
                                     <textarea name="message" placeholder="Any Message"></textarea>
                                 </div>
                                 <div class="contact-one__btn-box">
-                                    <button type="submit" class="thm-btn contact-one__btn">Submit Now<span
-                                            class="icon-arrow-right"></span></button>
+                                    <button type="submit" class="thm-btn contact-one__btn">Submit Now<span class="icon-arrow-right"></span></button>
                                 </div>
                             </div>
                         </div>
                     </form>
+                    
                     <div class="result"></div>
                 </div>
             </div>
@@ -1409,7 +1411,10 @@
                                             
                                             <a href="event-details.html">Book Now!<span
                                                     class="icon-arrow-right"></span></a>
+
+                                                    <p><a href="tel:9958-9968-34">✆ +91 9958-9968-34</a></p>
                                         </li>
+                                        
                                     </ul>
                                 </div>
                             </div>
@@ -1448,35 +1453,28 @@
                                     </div>
                                     <div class="footer-widget__contact-inner">
                                         <ul class="footer-widget__contact-list list-unstyled">
+                                            
                                             <li>
-                                                <div class="icon">
-                                                    <span class="icon-envelop"></span>
-                                                </div>
+                                                 
                                                 <div class="text">
-                                                    <p><a href="mailto:info@houseofcelebs.com">info@houseofcelebs.com</a>
+                                                    <h6> 📍 Head office </h6>
+                                                    <p>
+                                                        Plot No. 10, 2nd Floor,
+                                                         Paschim Enclave,   Rohtak Road,  Delhi - 110087
+                                                          </p>
+                                                    <br>
+                                                    <h6> 📍Branch office</h6>
+                                                    <p>CB - 165, First Floor, Ring Rd, Naraina Village, Naraina, Delhi, 110028</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                 
+                                                <div class="text">
+                                                    <p><a href="mailto:info@houseofcelebs.com">✉️ info@houseofcelebs.com</a>
                                                     </p>
                                                 </div>
                                             </li>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-pin"></span>
-                                                </div>
-                                                <div class="text">
-                                                    <p>3 Paschim Enclave, Delhi</p>
-                                                    <p>
-                                                        Plot No. 10, 2nd Floor,
-                                                        <br> Paschim Enclave, Rohtak Road, <br> Delhi - 110087
-                                                          </p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-call"></span>
-                                                </div>
-                                                <div class="text">
-                                                    <p><a href="tel:9958-9968-34">+91 9958-9968-34</a></p>
-                                                </div>
-                                            </li>
+                                             
                                         </ul>
                                     </div>
                                 </div>
@@ -1521,11 +1519,11 @@
             <ul class="mobile-nav__contact list-unstyled">
                 <li>
                     <i class="fa fa-envelope"></i>
-                    <a href="mailto:needhelp@packageName__.com">needhelp@eventflow.com</a>
+                    <a href="mailto:needhelp@packageName__.com">info@houseofcelebs.com</a>
                 </li>
                 <li>
                     <i class="fa fa-phone-alt"></i>
-                    <a href="tel:666-888-0000">666 888 0000</a>
+                    <a href="tel:9958-9968-34">+91 9958-9968-34</a>
                 </li>
             </ul><!-- /.mobile-nav__contact -->
             <div class="mobile-nav__top">
